@@ -3,7 +3,9 @@ body{
 }
 [class*="__container"] {
   margin: 0 auto;
-  max-width: 1046px;
+  max-width: 1076px;
+  padding: 0 15px;
+  height: 100%;
 }
 .button{
   display: inline-block;
@@ -37,4 +39,24 @@ body{
       background-color: $secondary-color;
     }
   }
+}
+.title{
+  text-align: center;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 57px;
+  letter-spacing: 0.2px;
+  color: $text-color;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  margin-bottom: 10px;
+}
+.descr{
+  margin: 0 auto;
+  text-align: center;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0.2px;
+  color: $second-text-color;
+  max-width: 510px;
 }
