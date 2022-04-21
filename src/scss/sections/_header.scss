@@ -1,5 +1,64 @@
-.header-main{
+.header{
   background: url('../images/content/header.jpg');
   background-size: cover;
   min-height: 100vh;
+  background-position: top right;
+  background-repeat: no-repeat;
+  &__inner{
+    height: 104px;
+    display: flex;
+    align-items: center;
+      &-logo {
+        flex: 0 0 106px;
+        color:$text-color;
+        letter-spacing: 0.1px;
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 32px;
+        transition: opacity .5s;
+        &:hover{
+          opacity: .6;
+        }
+      }
+  }
+  &-hero{
+    &__title{
+      color: $text-color;
+      font-weight: 800;
+      font-size: 58px;
+      line-height: 80px;
+      letter-spacing: 0.2px;
+      text-transform: uppercase;
+      max-width: 509px;
+    }
+    &__desc{
+      color: $second-text-color;
+      font-weight: 500;
+      font-size: 20px;
+      line-height: 30px;
+      letter-spacing: 0.2px;
+      margin: 35px 0;
+      max-width: 376px;
+    }
+  }
+}
+.menu{
+  margin-left: 117px;
+  &__item{
+    display: inline-block;
+    &+&{
+      margin-left: 21px;
+    } 
+  }
+  &__link{
+    color: $second-text-color;
+    transition: color .5s ease;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.2px;
+    &:hover{
+      color: $text-color;
+    }
+  }
 }

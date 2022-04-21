@@ -1,3 +1,40 @@
 body{
   font-family: Montserrat, sans-serif;
 }
+[class*="__container"] {
+  margin: 0 auto;
+  max-width: 1046px;
+}
+.button{
+  display: inline-block;
+  padding: 10px 36px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 28px;
+  text-align: center;
+  letter-spacing: 0.2px;
+  border: 1px solid;
+  &--primary{
+    background-color: $primary-color;
+    border-color: $primary-color;
+    color: $white;
+    transition: all .3s ease;
+    &:hover{
+      color: $primary-color;
+      background-color: transparent;
+    }
+  }
+  &--rounded{
+    border-radius: 37px;
+  }
+  &--secondary{
+    background-color: transparent;
+    border-color: $secondary-color;
+    color: $secondary-color;
+    transition: all .3s ease;
+    &:hover{
+      color: $white;
+      background-color: $secondary-color;
+    }
+  }
+}
