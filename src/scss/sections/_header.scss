@@ -1,13 +1,14 @@
 .header{
   background: url('../images/content/header.jpg');
   background-size: cover;
-  height: 100vh;
+  min-height: 100vh;
   background-position: top right;
   background-repeat: no-repeat;
   &__wrapper{
     display: flex;
     flex-direction: column;
-    height: 100%;
+    min-height: 100vh;
+    justify-content: space-between;
   }
   &__inner{
     height: 104px;
@@ -28,7 +29,7 @@
       }
   }
   &-hero{
-    height: 100%;
+    margin-bottom: auto;
     padding-bottom: 10px;
     &__title{
       color: $text-color;
