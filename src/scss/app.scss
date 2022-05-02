@@ -16,13 +16,14 @@
 @import 'base/mixins';
 
 /* Vendor */
-
+// @import "../../node_modules/swiper/swiper-bundle.css";
 @import 'base/global';
 
 /* Sections */
 
 @import 'sections/header';
 @import 'sections/advantages';
+@import 'sections/advice';
 
 /* Browser specific styles */
 @import 'dirty/hacks';
