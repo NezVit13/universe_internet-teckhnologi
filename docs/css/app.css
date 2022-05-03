@@ -293,7 +293,8 @@ body {
   line-height: 57px;
   letter-spacing: 0.2px;
   color: #252B42;
-  margin-bottom: 10px;
+  max-width: 480px;
+  margin: 0 auto 10px;
 }
 
 .descr {
@@ -595,6 +596,10 @@ body {
   width: 100%;
   top: 0;
   left: 0;
+}
+
+.about {
+  padding: 100px 0;
 }
 
 /* Browser specific styles */
