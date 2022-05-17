@@ -21,6 +21,14 @@
     background-color: #16697a;
     border-radius: 2px;
     justify-content: space-between;
+    opacity: 0;
+    transform: translate(0, 100%);
+    &._active {
+      transform: translate(0, 0);
+      opacity: 1;
+      transition: all 1s ease;
+      overflow: hidden;
+    }
   }
   @media (max-width: 1070px) {
     .subscribe__box {

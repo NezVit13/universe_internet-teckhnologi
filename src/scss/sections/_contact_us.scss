@@ -1,6 +1,11 @@
 .contact-us {
   background-color: $white;
   padding: 42px 0;
+  transform: scale(0.5) translate(-100%, -100%);
+  &._active {
+    transform: scale(1) translate(0, 0);
+    transition: all 1s ease;
+  }
   &__box {
     display: flex;
     justify-content: space-between;

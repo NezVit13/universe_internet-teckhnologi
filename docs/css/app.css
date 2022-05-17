@@ -259,6 +259,14 @@ body {
   text-align: center;
   letter-spacing: 0.2px;
   border: 1px solid;
+  -webkit-transform: scale(0);
+          transform: scale(0);
+  -webkit-transition: all 0.8s ease 0s;
+  transition: all 0.8s ease 0s;
+}
+.button._active {
+  -webkit-transform: scale(1);
+          transform: scale(1);
 }
 .button--primary {
   background-color: #FFA62B;
@@ -295,6 +303,12 @@ body {
   color: #252B42;
   max-width: 480px;
   margin: 0 auto 10px;
+  opacity: 0;
+}
+.title._active {
+  opacity: 1;
+  -webkit-transition: all 1s ease;
+  transition: all 1s ease;
 }
 
 .descr {
@@ -306,6 +320,62 @@ body {
   letter-spacing: 0.2px;
   color: #737373;
   max-width: 510px;
+  opacity: 0;
+}
+.descr._active {
+  opacity: 1;
+  -webkit-transition: all 2s ease;
+  transition: all 2s ease;
+}
+
+.scrollUp {
+  position: fixed;
+  z-index: 5;
+  bottom: 30px;
+  right: 30px;
+  background-color: #FFA62B;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  cursor: pointer;
+  -webkit-transform: translate(500%, 0px);
+          transform: translate(500%, 0px);
+}
+.scrollUp._active {
+  -webkit-transform: translate(0px, 0px);
+          transform: translate(0px, 0px);
+}
+.scrollUp:hover {
+  background-color: #00a0c1;
+}
+.scrollUp:hover svg path {
+  fill: #FFA62B;
+}
+
+.anim-show {
+  -webkit-transform: translate(0px, 120%);
+          transform: translate(0px, 120%);
+  opacity: 0;
+  -webkit-transition: all 0.5s ease 0s;
+  transition: all 0.5s ease 0s;
+}
+
+._anim-show._active,
+._active ._anim-show {
+  opacity: 1;
+  -webkit-transform: translate(0px, 0px);
+          transform: translate(0px, 0px);
 }
 
 /* Sections */
@@ -366,6 +436,16 @@ body {
   letter-spacing: 0.2px;
   text-transform: uppercase;
   max-width: 509px;
+  -webkit-transform: translate(0px, 120%);
+          transform: translate(0px, 120%);
+  opacity: 0;
+  -webkit-transition: all 0.8s ease 0s;
+  transition: all 0.8s ease 0s;
+}
+.header-hero__title._active {
+  -webkit-transform: translate(0px, 0px);
+          transform: translate(0px, 0px);
+  opacity: 1;
 }
 .header-hero__desc {
   color: #737373;
@@ -375,6 +455,18 @@ body {
   letter-spacing: 0.2px;
   margin: 35px 0;
   max-width: 376px;
+  -webkit-transform: translate(0px, 120%);
+          transform: translate(0px, 120%);
+  opacity: 0;
+  -webkit-transition: all 0.8s ease 0s;
+  transition: all 0.8s ease 0s;
+}
+.header-hero__desc._active {
+  -webkit-transform: translate(0px, 0px);
+          transform: translate(0px, 0px);
+  opacity: 1;
+  -webkit-transition: all 0.8s ease 0.5s;
+  transition: all 0.8s ease 0.5s;
 }
 .header-bottom {
   margin-bottom: -20px;
@@ -545,6 +637,8 @@ body {
 }
 .advice__items {
   margin-bottom: 40px;
+  -webkit-transform: translate(500%, 0);
+          transform: translate(500%, 0);
 }
 
 .item-advice {
@@ -730,6 +824,17 @@ body {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  opacity: 0;
+  -webkit-transform: translate(0, 100%);
+          transform: translate(0, 100%);
+}
+.subscribe__box._active {
+  -webkit-transform: translate(0, 0);
+          transform: translate(0, 0);
+  opacity: 1;
+  -webkit-transition: all 1s ease;
+  transition: all 1s ease;
+  overflow: hidden;
 }
 @media (max-width: 1070px) {
   .subscribe .subscribe__box {
@@ -932,6 +1037,14 @@ body {
 .contact-us {
   background-color: #fff;
   padding: 42px 0;
+  -webkit-transform: scale(0.5) translate(-100%, -100%);
+          transform: scale(0.5) translate(-100%, -100%);
+}
+.contact-us._active {
+  -webkit-transform: scale(1) translate(0, 0);
+          transform: scale(1) translate(0, 0);
+  -webkit-transition: all 1s ease;
+  transition: all 1s ease;
 }
 .contact-us__box {
   display: -webkit-box;

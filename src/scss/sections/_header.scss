@@ -1,37 +1,37 @@
-.header{
-  background: url('../images/content/header.jpg');
+.header {
+  background: url("../images/content/header.jpg");
   background-size: cover;
   min-height: 100vh;
   background-position: top right;
   background-repeat: no-repeat;
-  &__wrapper{
+  &__wrapper {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
     justify-content: space-between;
   }
-  &__inner{
+  &__inner {
     height: 104px;
     display: flex;
     align-items: center;
     margin-bottom: 80px;
-      &-logo {
-        flex: 0 0 106px;
-        color:$text-color;
-        letter-spacing: 0.1px;
-        font-weight: 700;
-        font-size: 24px;
-        line-height: 32px;
-        transition: opacity .5s;
-        &:hover{
-          opacity: .6;
-        }
+    &-logo {
+      flex: 0 0 106px;
+      color: $text-color;
+      letter-spacing: 0.1px;
+      font-weight: 700;
+      font-size: 24px;
+      line-height: 32px;
+      transition: opacity 0.5s;
+      &:hover {
+        opacity: 0.6;
       }
+    }
   }
-  &-hero{
+  &-hero {
     margin-bottom: auto;
     padding-bottom: 10px;
-    &__title{
+    &__title {
       color: $text-color;
       font-weight: 800;
       font-size: 58px;
@@ -39,8 +39,15 @@
       letter-spacing: 0.2px;
       text-transform: uppercase;
       max-width: 509px;
+      transform: translate(0px, 120%);
+      opacity: 0;
+      transition: all 0.8s ease 0s;
+      &._active {
+        transform: translate(0px, 0px);
+        opacity: 1;
+      }
     }
-    &__desc{
+    &__desc {
       color: $second-text-color;
       font-weight: 500;
       font-size: 20px;
@@ -48,46 +55,54 @@
       letter-spacing: 0.2px;
       margin: 35px 0;
       max-width: 376px;
+      transform: translate(0px, 120%);
+      opacity: 0;
+      transition: all 0.8s ease 0s;
+      &._active {
+        transform: translate(0px, 0px);
+        opacity: 1;
+        transition: all 0.8s ease 0.5s;
+      }
     }
   }
-  &-bottom{
+  &-bottom {
     margin-bottom: -20px;
-    &__items{
+    &__items {
       display: flex;
       margin: 0 -15px;
       flex-wrap: wrap;
       row-gap: 15px;
     }
-    &__item{
+    &__item {
       flex: 1 0 33.333%;
       padding: 0 15px;
-      min-width: 280px;  
+      min-width: 280px;
     }
   }
 }
-.item-header{
+.item-header {
   padding: 35px 20px 35px 40px;
   background-color: $white;
   box-shadow: 0px 13px 19px rgba(0, 0, 0, 0.07);
   display: flex;
   flex-direction: column;
   height: 100%;
-  transition: all .5s ease;
+  transition: all 0.5s ease;
   cursor: default;
-  &:hover{
+  &:hover {
     background-color: $secondary-color;
     .item-header__name,
-    .item-header__descr{
+    .item-header__descr {
       color: $white;
     }
-    .item-header__img svg path{
+    .item-header__img svg path {
       fill: $white;
     }
   }
-  &__img{
+  &__img {
     margin-bottom: 10px;
   }
-  &__name{
+  &__name {
     font-weight: 700;
     font-size: 24px;
     line-height: 32px;
@@ -96,7 +111,7 @@
     flex-grow: 1;
     margin-bottom: 10px;
   }
-  &__descr{
+  &__descr {
     font-weight: 500;
     font-size: 14px;
     line-height: 20px;
@@ -104,22 +119,22 @@
     color: $second-text-color;
   }
 }
-.menu{
+.menu {
   margin-left: 117px;
-  &__item{
+  &__item {
     display: inline-block;
-    &+&{
+    & + & {
       margin-left: 21px;
-    } 
+    }
   }
-  &__link{
+  &__link {
     color: $second-text-color;
-    transition: color .5s ease;
+    transition: color 0.5s ease;
     font-weight: 600;
     font-size: 14px;
     line-height: 24px;
     letter-spacing: 0.2px;
-    &:hover{
+    &:hover {
       color: $text-color;
     }
   }
