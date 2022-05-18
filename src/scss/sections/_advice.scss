@@ -1,6 +1,9 @@
 .advice {
   padding: 137px 0 90px;
   background-color: $second-bg-color;
+  @media (max-width: 767px) {
+    padding: 20px 0 90px;
+  }
   &__descr {
     margin-bottom: 45px;
   }
@@ -27,7 +30,6 @@
     line-height: 20px;
     letter-spacing: 0.2px;
     color: #737373;
-    // height: 100%;
   }
   &__body {
     padding: 30px;

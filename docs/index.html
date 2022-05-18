@@ -9,22 +9,15 @@
 <link rel="icon" href="favicon.ico"><script defer src="js/app.js"></script><link href="css/app.css" rel="stylesheet"></head>
 
 <body>
-  <div class="scrollUp">
-    <?xml version="1.0" encoding="UTF-8"?>
-    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="20px" height="27px"
-      viewBox="0 0 20 26" version="1.1">
-      <g id="surface1">
-        <path style=" stroke:none;fill-rule:nonzero;"
-          d="M 19.511719 12.523438 C 19.1875 12.84375 18.761719 13 18.332031 13 C 17.90625 13 17.480469 12.839844 17.15625 12.523438 L 11.667969 7.175781 L 11.667969 22.75 C 11.667969 23.648438 10.921875 24.328125 10.046875 24.328125 C 9.171875 24.328125 8.332031 23.648438 8.332031 22.75 L 8.332031 7.175781 L 2.84375 12.523438 C 2.195312 13.15625 1.140625 13.15625 0.488281 12.523438 C -0.164062 11.886719 -0.164062 10.859375 0.488281 10.226562 L 8.820312 2.101562 C 9.472656 1.464844 10.527344 1.464844 11.179688 2.101562 L 19.511719 10.226562 C 20.160156 10.863281 20.160156 11.886719 19.511719 12.523438 Z M 19.511719 12.523438 " fill = "#00A0C1";fill-opacity="1";/>
-      </g>
-    </svg>
-  </div>
   <header class="header">
     <div class="header__container">
       <div class="header__wrapper">
         <div class="header__inner">
           <a href="#" class="header__inner-logo">Indicorp</a>
-          <nav class="menu">
+          <div class="menu__icon">
+            <span></span>
+          </div>
+          <nav class="menu__body">
             <ul class="menu__list">
               <li class="menu__item"><a href="#" class="menu__link">Home</a></li>
               <li class="menu__item"><a href="#" class="menu__link">Product</a></li>
@@ -37,8 +30,10 @@
           <h1 class="header-hero__title anim-items">EMPOWER YOUR BUSINESS</h1>
           <p class="header-hero__desc anim-items">We know how large objects will act,
             but things on a small scale.</p>
-          <a href="#" class="button button--rounded button--primary anim-items">Get Quote Now</a>
-          <a href="#" class="button button--secondary button--rounded anim-items">Learn More</a>
+          <div class="header-hero__button-box">
+            <a href="#" class="button button--rounded button--primary anim-items">Get Quote Now</a>
+            <a href="#" class="button button--secondary button--rounded anim-items">Learn More</a>
+          </div>
         </div>
         <div class="header-bottom">
           <div class="header-bottom__items">
@@ -113,7 +108,8 @@
     <section class="advantages">
       <div class="advantages__container">
         <h2 class="advantages__title title anim-items">WHY CHOOSE US</h2>
-        <p class="advantages__text descr anim-items">Problems trying to resolve the conflict between the two major realmsof
+        <p class="advantages__text descr anim-items">Problems trying to resolve the conflict between the two major
+          realmsof
           Classical
           physics: Newtonian mechanics</p>
         <div class="advantages__items">
@@ -276,8 +272,8 @@
         <p class="about__descr descr anim-items">Problems trying to resolve the conflict between the two major realms
           of Classical physics: Newtonian mechanics</p>
         <div class="about__inner">
-          <div class="about__popup">
-            <img src="./images/content/card-item.png" alt="">
+            <div class="about-video__img">
+              <img src="./images/content/about.jpg" alt="">
           </div>
           <div class="about__info about-info">
             <h3 class="about__title--section title anim-items">
@@ -513,6 +509,17 @@
       </div>
     </div>
   </footer>
+  <div class="scrollUp">
+    <?xml version="1.0" encoding="UTF-8"?>
+    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="20px" height="27px"
+      viewBox="0 0 20 26" version="1.1">
+      <g id="surface1">
+        <path style=" stroke:none;fill-rule:nonzero;"
+          d="M 19.511719 12.523438 C 19.1875 12.84375 18.761719 13 18.332031 13 C 17.90625 13 17.480469 12.839844 17.15625 12.523438 L 11.667969 7.175781 L 11.667969 22.75 C 11.667969 23.648438 10.921875 24.328125 10.046875 24.328125 C 9.171875 24.328125 8.332031 23.648438 8.332031 22.75 L 8.332031 7.175781 L 2.84375 12.523438 C 2.195312 13.15625 1.140625 13.15625 0.488281 12.523438 C -0.164062 11.886719 -0.164062 10.859375 0.488281 10.226562 L 8.820312 2.101562 C 9.472656 1.464844 10.527344 1.464844 11.179688 2.101562 L 19.511719 10.226562 C 20.160156 10.863281 20.160156 11.886719 19.511719 12.523438 Z M 19.511719 12.523438 "
+          fill="#00A0C1" ;fill-opacity="1" ; />
+      </g>
+    </svg>
+  </div>
 </body>
 
 </html>

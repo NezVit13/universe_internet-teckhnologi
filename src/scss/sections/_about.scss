@@ -6,6 +6,10 @@
   &__inner {
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    @media (max-width:991px){
+        flex-direction: column;
+    }
   }
   &__info {
     flex-basis: 330px;
@@ -61,5 +65,16 @@
       left: 0;
       background-image: url(../images/design/speed.svg);
     }
+  }
+}
+.about-video__img{
+  position: relative;
+  padding-bottom: 70%;
+  img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
   }
 }
